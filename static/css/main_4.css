@@ -1,0 +1,4 @@
+.background{
+    background_image: url(/static/img/background.jpeg)
+    background_size: cover;
+}

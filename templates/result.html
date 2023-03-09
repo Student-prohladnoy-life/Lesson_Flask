@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Результат парсера Игровых ПК на intel i5 </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main_3.css">
+</head>
+<body>
+<ul>
+    <li>
+        <a href="/"> ГлАвНаЯ сТрАнИцА </a>
+    </li>
+    <li>
+        <a href="/contacts/"> Контакты </a>
+    </li>
+     <li>
+        <a href="/result/"> Результат парсера Игровых ПК на базе intel i5 </a>
+    </li>
+
+</ul>
+    {% if list_of_pc %}
+<ul>
+    {% for item in list_of_pc %}
+    <li>
+        <p class="alert">{{item}}</p>
+    </li>
+    {% endfor %}
+    <br>
+    <hr>
+</ul>
+    {% else %}
+        Данных нет
+    {% endif %}
+<!--<ul>-->
+<!--    <li>-->
+<!--        {{list_of_pc.1}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.2}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.3}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.4}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.5}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.6}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.7}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.8}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.9}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.10}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--    <li>-->
+<!--        {{list_of_pc.11}}-->
+<!--    </li>-->
+<!--    <br>-->
+<!--</ul>-->
+</body>
+</html>
